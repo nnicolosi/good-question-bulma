@@ -1,0 +1,25 @@
+{
+  "name": "good-question-bulma",
+  "version": "1.0.0",
+  "description": "Customized CSS framework (Bulma) for Good Question application",
+  "main": "sass/good-question.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/good-question.scss css/good-question.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnicolosi/good-question-bulma.git"
+  },
+  "author": "Nick Nicolosi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nnicolosi/good-question-bulma/issues"
+  },
+  "homepage": "https://github.com/nnicolosi/good-question-bulma#readme",
+  "devDependencies": {
+    "bulma": "^0.9.3",
+    "node-sass": "^6.0.0"
+  }
+}

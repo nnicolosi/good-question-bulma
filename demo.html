@@ -1,0 +1,3199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/good-question.css">
+	<title>Bulma Theme Kit</title>
+</head>
+
+<body>
+	<div class="container">
+		<section class="hero">
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">Good Question Bulma Theme</h1>
+					<h2 class="subtitle">Custom SASS Theme</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="navbar">
+			<h2 class="title">Navbar</h2>
+
+			<hr>
+
+			<div class="block" style="border: 2px solid #f5f5f5">
+				<nav class="navbar is-white">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox"
+								width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorwhite-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorwhite-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-light">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox"
+								width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorlight-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorlight-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-dark">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo-white.png"
+								alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColordark-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColordark-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-black">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo-white.png"
+								alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorblack-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorblack-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-primary">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo-white.png"
+								alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorprimary-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorprimary-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-link">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo-white.png"
+								alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorlink-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorlink-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-info">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo-white.png"
+								alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorinfo-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorinfo-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-success">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo-white.png"
+								alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorsuccess-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorsuccess-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-warning">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox"
+								width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColorwarning-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColorwarning-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="block">
+				<nav class="navbar is-danger">
+					<div class="navbar-brand"><a class="navbar-item" href="https://bulma.io">
+							<img src="https://bulma.io/images/bulma-logo-white.png"
+								alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+						</a>
+
+						<div class="navbar-burger burger" data-target="navMenuColordanger-example"><span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div id="navMenuColordanger-example" class="navbar-menu">
+						<div class="navbar-start"><a class="navbar-item" href="https://bulma.io/">
+								Home
+							</a>
+
+							<div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link"
+									href="/documentation/overview/start/">
+									Docs
+								</a>
+
+								<div class="navbar-dropdown"><a class="navbar-item" href="/documentation/overview/start/">
+										Overview
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+										Modifiers
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+										Columns
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+										Layout
+									</a>
+									<a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+										Form
+									</a>
+
+									<hr class="navbar-divider"><a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+										Elements
+									</a>
+									<a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+										Components
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped">
+									<p class="control"><a class="bd-tw-button button" data-social-network="Twitter"
+											data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank"
+											href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab"
+													data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+													</path>
+												</svg><!-- <i class="fab fa-twitter"></i> -->
+											</span>
+											<span>
+												Tweet
+											</span>
+										</a></p>
+
+									<p class="control"><a class="button is-primary"
+											href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+											<span class="icon">
+												<svg class="svg-inline--fa fa-download fa-w-16" aria-hidden="true" data-prefix="fas"
+													data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+													data-fa-i2svg="">
+													<path fill="currentColor"
+														d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+													</path>
+												</svg><!-- <i class="fas fa-download"></i> -->
+											</span>
+											<span>Download</span>
+										</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</section>
+
+		<section class="section" id="buttons">
+			<h2 class="title">Buttons</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column">
+					<div class="buttons"><a class="button">Anchor</a>
+
+						<button class="button">Button</button>
+
+						<input class="button" type="submit" value="Submit input">
+
+						<input class="button" type="reset" value="Reset input">
+					</div>
+
+					<div class="buttons"><a class="button">Default</a>
+						<a class="button is-white">White</a>
+						<a class="button is-light">Light</a>
+						<a class="button is-dark">Dark</a>
+						<a class="button is-black">Black</a>
+						<a class="button is-text">Text</a>
+					</div>
+
+					<div class="buttons"><a class="button is-primary">Primary</a>
+						<a class="button is-link">Link</a>
+						<a class="button is-info">Info</a>
+						<a class="button is-success">Success</a>
+						<a class="button is-warning">Warning</a>
+						<a class="button is-danger">Danger</a>
+					</div>
+
+					<div class="buttons"><a class="button is-small">Small</a>
+						<a class="button">Normal</a>
+						<a class="button is-medium">Medium</a>
+						<a class="button is-large">Large</a>
+					</div>
+
+					<div class="buttons"><a class="button is-focused"> Focus </a>
+						<a class="button is-primary is-focused"> Focus </a>
+						<a class="button is-info is-focused"> Focus </a>
+						<a class="button is-success is-focused"> Focus </a>
+						<a class="button is-warning is-focused"> Focus </a>
+						<a class="button is-danger is-focused"> Focus </a>
+					</div>
+
+					<div class="buttons"><a class="button is-hovered"> Hover </a>
+						<a class="button is-primary is-hovered"> Hover </a>
+						<a class="button is-info is-hovered"> Hover </a>
+						<a class="button is-success is-hovered"> Hover </a>
+						<a class="button is-warning is-hovered"> Hover </a>
+						<a class="button is-danger is-hovered"> Hover </a>
+					</div>
+
+					<div class="buttons"><a class="button is-active"> Active </a>
+						<a class="button is-primary is-active"> Active </a>
+						<a class="button is-info is-active"> Active </a>
+						<a class="button is-success is-active"> Active </a>
+						<a class="button is-warning is-active"> Active </a>
+						<a class="button is-danger is-active"> Active </a>
+					</div>
+
+					<div class="buttons"><a class="button is-loading"> Loading </a>
+						<a class="button is-primary is-loading"> Loading </a>
+						<a class="button is-info is-loading"> Loading </a>
+						<a class="button is-success is-loading"> Loading </a>
+						<a class="button is-warning is-loading"> Loading </a>
+						<a class="button is-danger is-loading"> Loading </a>
+					</div>
+
+					<div class="buttons"><a class="button" title="Disabled button" disabled>Disabled</a>
+						<a class="button is-primary" title="Disabled button" disabled>Disabled</a>
+						<a class="button is-link" title="Disabled button" disabled>Disabled</a>
+						<a class="button is-info" title="Disabled button" disabled>Disabled</a>
+						<a class="button is-success" title="Disabled button" disabled>Disabled</a>
+						<a class="button is-warning" title="Disabled button" disabled>Disabled</a>
+						<a class="button is-danger" title="Disabled button" disabled>Disabled</a>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="buttons"><a class="button is-rounded">Rounded</a>
+						<a class="button is-primary is-rounded">Rounded</a>
+						<a class="button is-link is-rounded">Rounded</a>
+						<a class="button is-info is-rounded">Rounded</a>
+						<a class="button is-success is-rounded">Rounded</a>
+						<a class="button is-danger is-rounded">Rounded</a>
+					</div>
+
+					<div class="buttons"><a class="button is-outlined">Outlined</a>
+						<a class="button is-primary is-outlined">Outlined</a>
+						<a class="button is-link is-outlined">Outlined</a>
+						<a class="button is-info is-outlined">Outlined</a>
+						<a class="button is-success is-outlined">Outlined</a>
+						<a class="button is-danger is-outlined">Outlined</a>
+					</div>
+
+					<div class="buttons notification is-primary"><a class="button is-primary is-inverted is-outlined"> Invert
+							Outlined </a>
+						<a class="button is-info is-inverted is-outlined"> Invert Outlined </a>
+						<a class="button is-success is-inverted is-outlined"> Invert Outlined </a>
+						<a class="button is-danger is-inverted is-outlined"> Invert Outlined </a>
+					</div>
+
+					<div class="buttons notification is-primary"><a class="button is-primary is-inverted"> Inverted </a>
+						<a class="button is-info is-inverted"> Inverted </a>
+						<a class="button is-success is-inverted"> Inverted </a>
+						<a class="button is-danger is-inverted"> Inverted </a>
+					</div>
+
+					<p class="field"><a class="button">
+							<span class="icon is-small">
+								<i class="fa fa-bold"> </i>
+							</span>
+						</a>
+						<a class="button">
+							<span class="icon is-small">
+								<i class="fa fa-italic"> </i>
+							</span>
+						</a>
+						<a class="button">
+							<span class="icon is-small">
+								<i class="fa fa-underline"> </i>
+							</span>
+						</a>
+						<a class="button">
+							<span class="icon">
+								<i class="fab fa-github"> </i>
+							</span>
+							<span> GitHub </span>
+						</a>
+
+						<a class="button is-primary">
+							<span class="icon">
+								<i class="fab fa-twitter"> </i>
+							</span>
+							<span> Twitter </span>
+						</a>
+						<a class="button is-success">
+							<span class="icon is-small">
+								<i class="fa fa-check"> </i>
+							</span>
+							<span> Save </span>
+						</a>
+						<a class="button is-danger is-outlined">
+							<span> Delete </span>
+							<span class="icon is-small">
+								<i class="fa fa-times"> </i>
+							</span>
+						</a>
+					</p>
+
+					<div class="field has-addons">
+						<p class="control"><a class="button">
+								<span class="icon is-small">
+									<i class="fa fa-bold"></i>
+								</span>
+								<span>Bold</span>
+							</a></p>
+
+						<p class="control"><a class="button">
+								<span class="icon is-small">
+									<i class="fa fa-italic"></i>
+								</span>
+								<span>Italic</span>
+							</a></p>
+
+						<p class="control"><a class="button">
+								<span class="icon is-small">
+									<i class="fa fa-underline"></i>
+								</span>
+								<span>Underline</span>
+							</a></p>
+					</div>
+
+					<div class="field has-addons">
+						<p class="control"><a class="button">
+								<span class="icon is-small">
+									<i class="fa fa-align-left"></i>
+								</span>
+								<span>Left</span>
+							</a></p>
+
+						<p class="control"><a class="button">
+								<span class="icon is-small">
+									<i class="fa fa-align-center"></i>
+								</span>
+								<span>Center</span>
+							</a></p>
+
+						<p class="control"><a class="button">
+								<span class="icon is-small">
+									<i class="fa fa-align-right"></i>
+								</span>
+								<span>Right</span>
+							</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="typography">
+			<h2 class="title">Typography</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column">
+					<h1 class="title">Title 1</h1>
+
+					<h2 class="title">Title 2</h2>
+
+					<h3 class="title">Title 3</h3>
+
+					<h4 class="title">Title 4</h4>
+
+					<h5 class="title">Title 5</h5>
+
+					<h6 class="title">Title 6</h6>
+				</div>
+				<!--.column-->
+
+				<div class="column">
+					<h1 class="subtitle">Subtitle 1</h1>
+
+					<h2 class="subtitle">Subtitle 2</h2>
+
+					<h3 class="subtitle">Subtitle 3</h3>
+
+					<h4 class="subtitle">Subtitle 4</h4>
+
+					<h5 class="subtitle">Subtitle 5</h5>
+
+					<h6 class="subtitle">Subtitle 6</h6>
+				</div>
+				<!--.column-->
+
+				<div class="column content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in accumsan nibh. Curabitur <strong>nisl
+							justo</strong>, posuere eget posuere at, laoreet id magna.</p>
+
+					<p>Nullam quis iaculis ligula. Sed vestibulum, tortor et finibus elementum, nisl tortor porttitor diam, sit
+						amet <a href="#">dictum quam</a> neque vel diam. Phasellus euismod arcu a facilisis facilisis.</p>
+
+					<p>Integer nec ullamcorper tellus, eget luctus dui. Fusce fermentum dictum pharetra. Mauris placerat lorem eu
+						mollis luctus. Donec vulputate pellentesque euismod.</p>
+				</div>
+				<!--.column-->
+			</div>
+			<!--.columns-->
+		</section>
+
+		<div class="columns">
+			<div class="column is-one-third">
+				<section class="section" id="menu">
+					<h2 class="title">Menu</h2>
+
+					<hr>
+
+					<aside class="menu">
+						<p class="menu-label">General</p>
+
+						<ul class="menu-list">
+							<li><a>Dashboard</a></li>
+							<li><a>Customers</a></li>
+						</ul>
+
+						<p class="menu-label">Administration</p>
+
+						<ul class="menu-list">
+							<li><a>Team Settings</a></li>
+							<li><a class="is-active">Manage Your Team</a>
+
+								<ul>
+									<li><a>Members</a></li>
+									<li><a>Plugins</a></li>
+									<li><a>Add a member</a></li>
+								</ul>
+							</li>
+							<li><a>Invitations</a></li>
+							<li><a>Cloud Storage Environment Settings</a></li>
+							<li><a>Authentication</a></li>
+						</ul>
+
+						<p class="menu-label">Transactions</p>
+
+						<ul class="menu-list">
+							<li><a>Payments</a></li>
+							<li><a>Transfers</a></li>
+							<li><a>Balance</a></li>
+						</ul>
+					</aside>
+				</section>
+			</div>
+
+			<div class="column is-two-thirds">
+				<section class="section" id="breadcrumbs">
+					<h2 class="title">Breadcrumbs</h2>
+
+					<hr>
+
+					<nav class="breadcrumb" aria-label="breadcrumbs">
+						<ul>
+							<li><a href="#">Bulma</a></li>
+							<li><a href="#">Documentation</a></li>
+							<li><a href="#">Components</a></li>
+							<li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+						</ul>
+					</nav>
+
+					<nav class="breadcrumb" aria-label="breadcrumbs">
+						<ul>
+							<li><a href="#">
+									<span class="icon is-small">
+										<i class="fas fa-home" aria-hidden="true"></i>
+									</span>
+									<span>Bulma</span>
+								</a></li>
+							<li><a href="#">
+									<span class="icon is-small">
+										<i class="fas fa-book" aria-hidden="true"></i>
+									</span>
+									<span>Documentation</span>
+								</a></li>
+							<li><a href="#">
+									<span class="icon is-small">
+										<i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+									</span>
+									<span>Components</span>
+								</a></li>
+							<li class="is-active"><a href="#">
+									<span class="icon is-small">
+										<i class="fas fa-thumbs-up" aria-hidden="true"></i>
+									</span>
+									<span>Breadcrumb</span>
+								</a></li>
+						</ul>
+					</nav>
+
+					<nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+						<ul>
+							<li><a href="#">Bulma</a></li>
+							<li><a href="#">Documentation</a></li>
+							<li><a href="#">Components</a></li>
+							<li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+						</ul>
+					</nav>
+
+					<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+						<ul>
+							<li><a href="#">Bulma</a></li>
+							<li><a href="#">Documentation</a></li>
+							<li><a href="#">Components</a></li>
+							<li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+						</ul>
+					</nav>
+				</section>
+
+				<section class="section" id="pagination">
+					<h2 class="title">Pagination</h2>
+
+					<hr>
+
+					<div class="block">
+						<nav class="pagination" role="navigation" aria-label="pagination"><a
+								class="pagination-previous">Previous</a>
+							<a class="pagination-next">Next page</a>
+
+							<ul class="pagination-list">
+								<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+								<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+								<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="block">
+						<nav class="pagination is-rounded" role="navigation" aria-label="pagination"><a
+								class="pagination-previous">Previous</a>
+							<a class="pagination-next">Next page</a>
+
+							<ul class="pagination-list">
+								<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+								<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+								<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="block">
+						<nav class="pagination is-centered" role="navigation" aria-label="pagination"><a
+								class="pagination-previous">Previous</a>
+							<a class="pagination-next">Next page</a>
+
+							<ul class="pagination-list">
+								<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+								<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+								<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="block">
+						<nav class="pagination is-right" role="navigation" aria-label="pagination"><a
+								class="pagination-previous">Previous</a>
+							<a class="pagination-next">Next page</a>
+
+							<ul class="pagination-list">
+								<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+								<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+								<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+								<li><span class="pagination-ellipsis">&hellip;</span></li>
+								<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="block">
+						<nav class="pagination" role="navigation" aria-label="pagination"><a class="pagination-previous"
+								title="This is the first page" disabled>Previous</a>
+							<a class="pagination-next">Next page</a>
+
+							<ul class="pagination-list">
+								<li><a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
+								<li><a class="pagination-link" aria-label="Goto page 2">2</a></li>
+								<li><a class="pagination-link" aria-label="Goto page 3">3</a></li>
+							</ul>
+						</nav>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<section class="section" id="forms">
+			<h2 class="title">Forms</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column">
+					<h3 class="subtitle">Basic Form</h3>
+
+					<div class="field">
+						<label class="label">Name</label>
+
+						<p class="control">
+							<input class="input" type="text" placeholder="Text input">
+						</p>
+					</div>
+
+					<div class="field">
+						<label class="label">Username</label>
+
+						<p class="control has-icons-left has-icons-right">
+							<input class="input is-success" type="text" placeholder="Text input" value="bulma"><span
+								class="icon is-small is-left">
+								<i class="fa fa-user"></i>
+							</span>
+							<span class="icon is-small is-right">
+								<i class="fa fa-check"></i>
+							</span>
+						</p>
+
+						<p class="help is-success">This username is available</p>
+					</div>
+
+					<div class="field">
+						<label class="label">Email</label>
+
+						<p class="control has-icons-left has-icons-right">
+							<input class="input is-danger" type="text" placeholder="Email input" value="hello@"><span
+								class="icon is-small is-left">
+								<i class="fa fa-envelope"></i>
+							</span>
+							<span class="icon is-small is-right">
+								<i class="fa fa-warning"></i>
+							</span>
+						</p>
+
+						<p class="help is-danger">This email is invalid</p>
+					</div>
+
+					<div class="field">
+						<label class="label">Subject</label>
+
+						<p class="control"><span class="select">
+								<select>
+									<option>Select dropdown</option>
+
+									<option>With options</option>
+								</select>
+							</span></p>
+					</div>
+
+					<div class="field">
+						<label class="label">Message</label>
+
+						<p class="control">
+							<textarea class="textarea" placeholder="Textarea"></textarea>
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<label class="checkbox">
+								<input type="checkbox">I agree to the
+								<a href="#">terms and conditions</a></label>
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<label class="radio">
+								<input type="radio" name="question">Yes
+							</label>
+
+							<label class="radio">
+								<input type="radio" name="question">No
+							</label>
+						</p>
+					</div>
+
+					<div class="field is-grouped">
+						<p class="control">
+							<button class="button is-primary">Submit</button>
+						</p>
+
+						<p class="control">
+							<button class="button is-link">Cancel</button>
+						</p>
+					</div>
+
+					<br>
+
+					<h3 class="subtitle">File</h3>
+
+					<div class="field">
+						<div class="file">
+							<label class="file-label">
+								<input class="file-input" type="file" name="resume"><span class="file-cta">
+									<span class="file-icon">
+										<i class="fa fa-upload"></i>
+									</span>
+									<span class="file-label">
+										Choose a file…
+									</span>
+								</span></label>
+						</div>
+					</div>
+					<br>
+					<div class="field">
+						<div class="file has-name">
+							<label class="file-label">
+								<input class="file-input" type="file" name="resume"><span class="file-cta">
+									<span class="file-icon">
+										<i class="fa fa-upload"></i>
+									</span>
+									<span class="file-label">
+										Choose a file…
+									</span>
+								</span>
+								<span class="file-name">
+									Screen Shot 2017-07-29 at 15.54.25.png
+								</span></label>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="file is-primary">
+							<label class="file-label">
+								<input class="file-input" type="file" name="resume"><span class="file-cta">
+									<span class="file-icon">
+										<i class="fa fa-upload"></i>
+									</span>
+									<span class="file-label">
+										Primary file…
+									</span>
+								</span></label>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="file is-info has-name">
+							<label class="file-label">
+								<input class="file-input" type="file" name="resume"><span class="file-cta">
+									<span class="file-icon">
+										<i class="fa fa-upload"></i>
+									</span>
+									<span class="file-label">
+										Info file…
+									</span>
+								</span>
+								<span class="file-name">
+									Screen Shot 2017-07-29 at 15.54.25.png
+								</span></label>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="file is-warning is-boxed">
+							<label class="file-label">
+								<input class="file-input" type="file" name="resume"><span class="file-cta">
+									<span class="file-icon">
+										<i class="fa fa-cloud-upload"></i>
+									</span>
+									<span class="file-label">
+										Warning file…
+									</span>
+								</span></label>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="file is-danger has-name is-boxed">
+							<label class="file-label">
+								<input class="file-input" type="file" name="resume"><span class="file-cta">
+									<span class="file-icon">
+										<i class="fa fa-cloud-upload"></i>
+									</span>
+									<span class="file-label">
+										Danger file…
+									</span>
+								</span>
+								<span class="file-name">
+									Screen Shot 2017-07-29 at 15.54.25.png
+								</span></label>
+						</div>
+					</div>
+					<br>
+					<h3 class="subtitle">Rounded Input</h3>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-rounded" type="text" placeholder="Rounded input">
+						</p>
+					</div>
+				</div>
+
+				<div class="column">
+					<h3 class="subtitle">Colors</h3>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-primary" type="text" placeholder="Primary input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-info" type="text" placeholder="Info input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-success" type="text" placeholder="Success input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-warning" type="text" placeholder="Warning input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-danger" type="text" placeholder="Danger input">
+						</p>
+					</div>
+
+					<br>
+
+					<h3 class="subtitle">Sizes</h3>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-small" type="text" placeholder="Small input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<input class="input" type="text" placeholder="Normal input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-medium" type="text" placeholder="Medium input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<input class="input is-large" type="text" placeholder="Large input">
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control"><span class="select is-small">
+								<select>
+									<option>Select dropdown</option>
+
+									<option>With options</option>
+								</select>
+							</span></p>
+					</div>
+
+					<div class="field">
+						<p class="control"><span class="select">
+								<select>
+									<option>Select dropdown</option>
+
+									<option>With options</option>
+								</select>
+							</span></p>
+					</div>
+
+					<div class="field">
+						<p class="control"><span class="select is-medium">
+								<select>
+									<option>Select dropdown</option>
+
+									<option>With options</option>
+								</select>
+							</span></p>
+					</div>
+
+					<div class="field">
+						<p class="control"><span class="select is-large">
+								<select>
+									<option>Select dropdown</option>
+
+									<option>With options</option>
+								</select>
+							</span></p>
+					</div>
+
+					<br>
+
+					<h3 class="subtitle">With Icons</h3>
+
+					<div class="field">
+						<p class="control has-icons-left">
+							<input class="input" type="email" placeholder="Email"><span class="icon is-small is-left">
+								<i class="fa fa-envelope"></i>
+							</span>
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control has-icons-left">
+							<input class="input" type="password" placeholder="Password"><span class="icon is-small is-left">
+								<i class="fa fa-lock"></i>
+							</span>
+						</p>
+					</div>
+
+					<div class="field">
+						<p class="control">
+							<button class="button is-success">Login</button>
+						</p>
+					</div>
+
+					<br>
+
+					<h3 class="subtitle">Form Addons</h3>
+
+					<div class="field has-addons">
+						<p class="control">
+							<input class="input" type="text" placeholder="Find a repository">
+						</p>
+
+						<p class="control"><a class="button is-info">
+								Search
+							</a></p>
+					</div>
+
+					<div class="field has-addons">
+						<p class="control"><span class="select">
+								<select>
+									<option>$</option>
+
+									<option>£</option>
+
+									<option>€</option>
+								</select>
+							</span></p>
+
+						<p class="control">
+							<input class="input" type="text" placeholder="Amount of money">
+						</p>
+
+						<p class="control"><a class="button">
+								Transfer
+							</a></p>
+					</div>
+
+					<div class="field has-addons">
+						<p class="control is-expanded"><span class="select is-fullwidth">
+								<select name="country">
+									<option value="Argentina">Argentina</option>
+
+									<option value="Bolivia">Bolivia</option>
+
+									<option value="Brazil">Brazil</option>
+
+									<option value="Chile">Chile</option>
+
+									<option value="Colombia">Colombia</option>
+
+									<option value="Ecuador">Ecuador</option>
+
+									<option value="Guyana">Guyana</option>
+
+									<option value="Paraguay">Paraguay</option>
+
+									<option value="Peru">Peru</option>
+
+									<option value="Suriname">Suriname</option>
+
+									<option value="Uruguay">Uruguay</option>
+
+									<option value="Venezuela">Venezuela</option>
+								</select>
+							</span></p>
+
+						<p class="control">
+							<button type="submit" class="button is-primary">Choose</button>
+						</p>
+					</div>
+
+					<div class="field is-grouped">
+						<p class="control is-expanded">
+							<input class="input" type="text" placeholder="Find a repository">
+						</p>
+
+						<p class="control"><a class="button is-info">
+								Search
+							</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="table">
+			<h2 class="title">Table</h2>
+
+			<hr>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th><abbr title="Position">Pos</abbr></th>
+
+						<th>Team</th>
+
+						<th><abbr title="Played">Pld</abbr></th>
+
+						<th><abbr title="Won">W</abbr></th>
+
+						<th><abbr title="Drawn">D</abbr></th>
+
+						<th><abbr title="Lost">L</abbr></th>
+
+						<th><abbr title="Goals for">GF</abbr></th>
+
+						<th><abbr title="Goals against">GA</abbr></th>
+
+						<th><abbr title="Goal difference">GD</abbr></th>
+
+						<th><abbr title="Points">Pts</abbr></th>
+
+						<th>Qualification or relegation</th>
+					</tr>
+				</thead>
+
+				<tfoot>
+					<tr>
+						<th><abbr title="Position">Pos</abbr></th>
+
+						<th>Team</th>
+
+						<th><abbr title="Played">Pld</abbr></th>
+
+						<th><abbr title="Won">W</abbr></th>
+
+						<th><abbr title="Drawn">D</abbr></th>
+
+						<th><abbr title="Lost">L</abbr></th>
+
+						<th><abbr title="Goals for">GF</abbr></th>
+
+						<th><abbr title="Goals against">GA</abbr></th>
+
+						<th><abbr title="Goal difference">GD</abbr></th>
+
+						<th><abbr title="Points">Pts</abbr></th>
+
+						<th>Qualification or relegation</th>
+					</tr>
+				</tfoot>
+
+				<tbody>
+					<tr>
+						<th>1</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester
+								City</a> <strong>(C)</strong></td>
+
+						<td>38</td>
+
+						<td>23</td>
+
+						<td>12</td>
+
+						<td>3</td>
+
+						<td>68</td>
+
+						<td>36</td>
+
+						<td>+32</td>
+
+						<td>81</td>
+
+						<td>Qualification for the <a
+								href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+								title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+					</tr>
+
+					<tr>
+						<th>2</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+
+						<td>38</td>
+
+						<td>20</td>
+
+						<td>11</td>
+
+						<td>7</td>
+
+						<td>65</td>
+
+						<td>36</td>
+
+						<td>+29</td>
+
+						<td>71</td>
+
+						<td>Qualification for the <a
+								href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+								title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+					</tr>
+
+					<tr>
+						<th>3</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham
+								Hotspur</a></td>
+
+						<td>38</td>
+
+						<td>19</td>
+
+						<td>13</td>
+
+						<td>6</td>
+
+						<td>69</td>
+
+						<td>35</td>
+
+						<td>+34</td>
+
+						<td>70</td>
+
+						<td>Qualification for the <a
+								href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+								title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+					</tr>
+
+					<tr class="is-selected">
+						<th>4</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester
+								City</a></td>
+
+						<td>38</td>
+
+						<td>19</td>
+
+						<td>9</td>
+
+						<td>10</td>
+
+						<td>71</td>
+
+						<td>41</td>
+
+						<td>+30</td>
+
+						<td>66</td>
+
+						<td>Qualification for the <a
+								href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round"
+								title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+					</tr>
+
+					<tr>
+						<th>5</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="Manchester United F.C.">Manchester
+								United</a></td>
+
+						<td>38</td>
+
+						<td>19</td>
+
+						<td>9</td>
+
+						<td>10</td>
+
+						<td>49</td>
+
+						<td>35</td>
+
+						<td>+14</td>
+
+						<td>66</td>
+
+						<td>Qualification for the <a
+								href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+								title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+					</tr>
+
+					<tr>
+						<th>6</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="Southampton F.C.">Southampton</a></td>
+
+						<td>38</td>
+
+						<td>18</td>
+
+						<td>9</td>
+
+						<td>11</td>
+
+						<td>59</td>
+
+						<td>41</td>
+
+						<td>+18</td>
+
+						<td>63</td>
+
+						<td>Qualification for the <a
+								href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+								title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+					</tr>
+
+					<tr>
+						<th>7</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="West Ham United F.C.">West Ham
+								United</a></td>
+
+						<td>38</td>
+
+						<td>16</td>
+
+						<td>14</td>
+
+						<td>8</td>
+
+						<td>65</td>
+
+						<td>51</td>
+
+						<td>+14</td>
+
+						<td>62</td>
+
+						<td>Qualification for the <a
+								href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round"
+								title="2016–17 UEFA Europa League">Europa League third qualifying round</a></td>
+					</tr>
+
+					<tr>
+						<th>8</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="Liverpool F.C.">Liverpool</a></td>
+
+						<td>38</td>
+
+						<td>16</td>
+
+						<td>12</td>
+
+						<td>10</td>
+
+						<td>63</td>
+
+						<td>50</td>
+
+						<td>+13</td>
+
+						<td>60</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>9</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="Stoke City F.C.">Stoke City</a></td>
+
+						<td>38</td>
+
+						<td>14</td>
+
+						<td>9</td>
+
+						<td>15</td>
+
+						<td>41</td>
+
+						<td>55</td>
+
+						<td>−14</td>
+
+						<td>51</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>10</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="Chelsea F.C.">Chelsea</a></td>
+
+						<td>38</td>
+
+						<td>12</td>
+
+						<td>14</td>
+
+						<td>12</td>
+
+						<td>59</td>
+
+						<td>53</td>
+
+						<td>+6</td>
+
+						<td>50</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>11</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Everton_F.C." title="Everton F.C.">Everton</a></td>
+
+						<td>38</td>
+
+						<td>11</td>
+
+						<td>14</td>
+
+						<td>13</td>
+
+						<td>59</td>
+
+						<td>55</td>
+
+						<td>+4</td>
+
+						<td>47</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>12</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Swansea_City_A.F.C." title="Swansea City A.F.C.">Swansea City</a>
+						</td>
+
+						<td>38</td>
+
+						<td>12</td>
+
+						<td>11</td>
+
+						<td>15</td>
+
+						<td>42</td>
+
+						<td>52</td>
+
+						<td>−10</td>
+
+						<td>47</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>13</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Watford_F.C." title="Watford F.C.">Watford</a></td>
+
+						<td>38</td>
+
+						<td>12</td>
+
+						<td>9</td>
+
+						<td>17</td>
+
+						<td>40</td>
+
+						<td>50</td>
+
+						<td>−10</td>
+
+						<td>45</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>14</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C." title="West Bromwich Albion F.C.">West
+								Bromwich Albion</a></td>
+
+						<td>38</td>
+
+						<td>10</td>
+
+						<td>13</td>
+
+						<td>15</td>
+
+						<td>34</td>
+
+						<td>48</td>
+
+						<td>−14</td>
+
+						<td>43</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>15</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Crystal_Palace_F.C." title="Crystal Palace F.C.">Crystal
+								Palace</a></td>
+
+						<td>38</td>
+
+						<td>11</td>
+
+						<td>9</td>
+
+						<td>18</td>
+
+						<td>39</td>
+
+						<td>51</td>
+
+						<td>−12</td>
+
+						<td>42</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>16</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/A.F.C._Bournemouth" title="A.F.C. Bournemouth">AFC
+								Bournemouth</a></td>
+
+						<td>38</td>
+
+						<td>11</td>
+
+						<td>9</td>
+
+						<td>18</td>
+
+						<td>45</td>
+
+						<td>67</td>
+
+						<td>−22</td>
+
+						<td>42</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>17</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Sunderland_A.F.C." title="Sunderland A.F.C.">Sunderland</a></td>
+
+						<td>38</td>
+
+						<td>9</td>
+
+						<td>12</td>
+
+						<td>17</td>
+
+						<td>48</td>
+
+						<td>62</td>
+
+						<td>−14</td>
+
+						<td>39</td>
+
+						<td></td>
+					</tr>
+
+					<tr>
+						<th>18</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Newcastle_United_F.C." title="Newcastle United F.C.">Newcastle
+								United</a> <strong>(R)</strong></td>
+
+						<td>38</td>
+
+						<td>9</td>
+
+						<td>10</td>
+
+						<td>19</td>
+
+						<td>44</td>
+
+						<td>65</td>
+
+						<td>−21</td>
+
+						<td>37</td>
+
+						<td>Relegation to the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+								title="2016–17 Football League Championship">Football League Championship</a></td>
+					</tr>
+
+					<tr>
+						<th>19</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Norwich_City_F.C." title="Norwich City F.C.">Norwich City</a>
+							<strong>(R)</strong>
+						</td>
+
+						<td>38</td>
+
+						<td>9</td>
+
+						<td>7</td>
+
+						<td>22</td>
+
+						<td>39</td>
+
+						<td>67</td>
+
+						<td>−28</td>
+
+						<td>34</td>
+
+						<td>Relegation to the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+								title="2016–17 Football League Championship">Football League Championship</a></td>
+					</tr>
+
+					<tr>
+						<th>20</th>
+
+						<td><a href="https://en.wikipedia.org/wiki/Aston_Villa_F.C." title="Aston Villa F.C.">Aston Villa</a>
+							<strong>(R)</strong>
+						</td>
+
+						<td>38</td>
+
+						<td>3</td>
+
+						<td>8</td>
+
+						<td>27</td>
+
+						<td>27</td>
+
+						<td>76</td>
+
+						<td>−49</td>
+
+						<td>17</td>
+
+						<td>Relegation to the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+								title="2016–17 Football League Championship">Football League Championship</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="section" id="cards">
+			<h2 class="title">Cards</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-4by3">
+								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+							</figure>
+						</div>
+
+						<div class="card-content">
+							<div class="media">
+								<div class="media-left">
+									<figure class="image is-48x48">
+										<img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+									</figure>
+								</div>
+
+								<div class="media-content">
+									<p class="title is-4">John Smith</p>
+
+									<p class="subtitle is-6">@johnsmith</p>
+								</div>
+							</div>
+
+							<div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+								<a href="#">#css</a> <a href="#">#responsive</a>
+
+								<br><time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="card">
+						<header class="card-header">
+							<p class="card-header-title">Component</p>
+							<a href="#" class="card-header-icon" aria-label="more options">
+								<span class="icon">
+									<i class="fas fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</a>
+						</header>
+
+						<div class="card-content">
+							<div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+								mauris.
+								<a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+
+								<br><time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+							</div>
+						</div>
+
+						<footer class="card-footer"><a href="#" class="card-footer-item">Save</a>
+							<a href="#" class="card-footer-item">Edit</a>
+							<a href="#" class="card-footer-item">Delete</a>
+						</footer>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="card">
+						<div class="card-content">
+							<p class="title">“There are two hard things in computer science: cache invalidation, naming things, and
+								off-by-one errors.”</p>
+
+							<p class="subtitle">Jeff Atwood</p>
+						</div>
+
+						<footer class="card-footer">
+							<p class="card-footer-item"><span>
+									View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+								</span></p>
+
+							<p class="card-footer-item"><span>
+									Share on <a href="#">Facebook</a>
+								</span></p>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="tabs">
+			<h2 class="title">Tabs</h2>
+
+			<hr>
+
+			<div class="tabs is-centered">
+				<ul>
+					<li class="is-active"><a>Pictures</a></li>
+					<li><a>Music</a></li>
+					<li><a>Videos</a></li>
+					<li><a>Documents</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-centered">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-small is-centered">
+				<ul>
+					<li class="is-active"><a>Pictures</a></li>
+					<li><a>Music</a></li>
+					<li><a>Videos</a></li>
+					<li><a>Documents</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-medium is-centered">
+				<ul>
+					<li class="is-active"><a>Pictures</a></li>
+					<li><a>Music</a></li>
+					<li><a>Videos</a></li>
+					<li><a>Documents</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-large is-centered">
+				<ul>
+					<li class="is-active"><a>Pictures</a></li>
+					<li><a>Music</a></li>
+					<li><a>Videos</a></li>
+					<li><a>Documents</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-boxed is-centered">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-toggle is-centered">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-toggle is-toggle-rounded is-centered">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon is-small"><i class="fas fa-image"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-music"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-film"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-centered is-boxed">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-centered is-boxed is-medium">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-toggle is-fullwidth">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-toggle is-fullwidth is-large">
+				<ul>
+					<li class="is-active"><a>
+							<span class="icon"><i class="fas fa-image" aria-hidden="true"></i></span>
+							<span>Pictures</span>
+						</a></li>
+					<li><a>
+							<span class="icon"><i class="fas fa-music" aria-hidden="true"></i></span>
+							<span>Music</span>
+						</a></li>
+					<li><a>
+							<span class="icon"><i class="fas fa-film" aria-hidden="true"></i></span>
+							<span>Videos</span>
+						</a></li>
+					<li><a>
+							<span class="icon"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+							<span>Documents</span>
+						</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs is-fullwidth">
+				<ul>
+					<li><a>
+							<span class="icon"><i class="fas fa-angle-left" aria-hidden="true"></i></span>
+							<span>Left</span>
+						</a></li>
+					<li><a>
+							<span class="icon"><i class="fas fa-angle-up" aria-hidden="true"></i></span>
+							<span>Up</span>
+						</a></li>
+					<li><a>
+							<span>Right</span>
+							<span class="icon"><i class="fas fa-angle-right" aria-hidden="true"></i></span>
+						</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section" id="white-box">
+			<h2 class="title">White Box</h2>
+
+			<hr>
+
+			<div class="box">
+				<article class="media">
+					<div class="media-left">
+						<figure class="image is-64x64">
+							<img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+						</figure>
+					</div>
+
+					<div class="media-content">
+						<div class="content">
+							<p><strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+
+								<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+								egestas. Nullam condimentum luctus turpis.
+							</p>
+						</div>
+
+						<nav class="level is-mobile">
+							<div class="level-left"><a class="level-item" aria-label="reply">
+									<span class="icon is-small">
+										<i class="fas fa-reply" aria-hidden="true"></i>
+									</span>
+								</a>
+								<a class="level-item" aria-label="retweet">
+									<span class="icon is-small">
+										<i class="fas fa-retweet" aria-hidden="true"></i>
+									</span>
+								</a>
+								<a class="level-item" aria-label="like">
+									<span class="icon is-small">
+										<i class="fas fa-heart" aria-hidden="true"></i>
+									</span>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="tiles">
+			<h2 class="title">Tiles</h2>
+
+			<hr>
+
+			<div class="tile is-ancestor">
+				<div class="tile is-vertical is-8">
+					<div class="tile">
+						<div class="tile is-parent is-vertical">
+							<article class="tile is-child notification is-primary">
+								<p class="title">Vertical...</p>
+
+								<p class="subtitle">Top tile</p>
+							</article>
+
+							<article class="tile is-child notification is-warning">
+								<p class="title">...tiles</p>
+
+								<p class="subtitle">Bottom tile</p>
+							</article>
+						</div>
+
+						<div class="tile is-parent">
+							<article class="tile is-child notification is-info">
+								<p class="title">Middle tile</p>
+
+								<p class="subtitle">With an image</p>
+
+								<figure class="image is-4by3">
+									<img src="https://bulma.io/images/placeholders/640x480.png">
+								</figure>
+							</article>
+						</div>
+					</div>
+
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-danger">
+							<p class="title">Wide tile</p>
+
+							<p class="subtitle">Aligned with the right tile</p>
+
+							<div class="content">
+								<!-- Content -->
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="tile is-parent">
+					<article class="tile is-child notification is-success">
+						<div class="content">
+							<p class="title">Tall tile</p>
+
+							<p class="subtitle">With even more content</p>
+
+							<div class="content">
+								<!-- Content -->
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="notifications">
+			<h2 class="title">Notifications</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column">
+					<div class="notification">
+						<button class="delete"></button>
+						Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+						nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+							venenatis</a> efficitur. Sit amet,
+						consectetur adipiscing elit
+					</div>
+
+					<div class="notification is-primary">
+						<button class="delete"></button>
+						Primar lorem ipsum dolor sit amet, consectetur
+						adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+						nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+							venenatis</a> efficitur. Sit amet,
+						consectetur adipiscing elit
+					</div>
+
+					<div class="notification is-link">
+						<button class="delete"></button>
+						Primar lorem ipsum dolor sit amet, consectetur
+						adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+						nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+							venenatis</a> efficitur. Sit amet,
+						consectetur adipiscing elit
+					</div>
+
+					<div class="notification is-info">
+						<button class="delete"></button>
+						Primar lorem ipsum dolor sit amet, consectetur
+						adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+						nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+							venenatis</a> efficitur. Sit amet,
+						consectetur adipiscing elit
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="notification is-success">
+						<button class="delete"></button>
+						Primar lorem ipsum dolor sit amet, consectetur
+						adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+						nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+							venenatis</a> efficitur. Sit amet,
+						consectetur adipiscing elit
+					</div>
+
+					<div class="notification is-warning">
+						<button class="delete"></button>
+						Primar lorem ipsum dolor sit amet, consectetur
+						adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+						nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+							venenatis</a> efficitur. Sit amet,
+						consectetur adipiscing elit
+					</div>
+
+					<div class="notification is-danger">
+						<button class="delete"></button>
+						Primar lorem ipsum dolor sit amet, consectetur
+						adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+						nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+							venenatis</a> efficitur. Sit amet,
+						consectetur adipiscing elit
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="message">
+			<h2 class="title">Messages</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column">
+					<article class="message">
+						<div class="message-header">
+							<p>Hello World</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+
+					<article class="message is-dark">
+						<div class="message-header">
+							<p>Dark</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+
+					<article class="message is-primary">
+						<div class="message-header">
+							<p>Primary</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+
+					<article class="message is-link">
+						<div class="message-header">
+							<p>Link</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+
+					<article class="message is-info">
+						<div class="message-header">
+							<p>Info</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+
+					<article class="message is-success">
+						<div class="message-header">
+							<p>Success</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+
+					<article class="message is-warning">
+						<div class="message-header">
+							<p>Warning</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+
+					<article class="message is-danger">
+						<div class="message-header">
+							<p>Danger</p>
+
+							<button class="delete" aria-label="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>
+					</article>
+				</div>
+
+				<div class="column">
+					<article class="message">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+
+					<article class="message is-dark">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+
+					<article class="message is-primary">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+
+					<article class="message is-link">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+
+					<article class="message is-info">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+
+					<article class="message is-success">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+
+					<article class="message is-warning">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+
+					<article class="message is-danger">
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque
+								risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+							fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend
+								lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+							id porttitor mi magna a neque.</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="delete">
+			<h2 class="title">Delete</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column is-half">
+					<article class="message is-info">
+						<div class="message-header">Info
+							<button class="delete"></button>
+						</div>
+
+						<div class="message-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
+							tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. .</div>
+					</article>
+				</div>
+
+				<div class="column is-half">
+					<div class="notification is-danger">
+						<button class="delete"></button>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing
+						elit
+					</div>
+
+
+					<span class="tag is-success">
+						Hello World
+						<button class="delete is-small"></button>
+					</span>
+
+
+					<a class="delete is-small"></a>
+					<a class="delete"></a>
+					<a class="delete is-medium"></a>
+					<a class="delete is-large"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="progress">
+			<h2 class="title">Progress</h2>
+
+			<hr>
+
+			<div class="columns">
+				<div class="column">
+					<progress class="progress" value="15" max="100">15%</progress>
+
+					<progress class="progress is-small" value="15" max="100">15%</progress>
+
+					<progress class="progress" value="30" max="100">30%</progress>
+
+					<progress class="progress is-medium" value="45" max="100">45%</progress>
+
+					<progress class="progress is-large" value="60" max="100">60%</progress>
+				</div>
+
+				<div class="column">
+					<progress class="progress is-primary" value="15" max="100">15%</progress>
+
+					<progress class="progress is-link" value="30" max="100">30%</progress>
+
+					<progress class="progress is-info" value="45" max="100">45%</progress>
+
+					<progress class="progress is-success" value="60" max="100">60%</progress>
+
+					<progress class="progress is-warning" value="75" max="100">75%</progress>
+
+					<progress class="progress is-danger" value="90" max="100">90%</progress>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="panel">
+			<h2 class="title">Panel</h2>
+
+			<hr>
+
+			<nav class="panel">
+				<p class="panel-heading">repositories</p>
+
+				<div class="panel-block">
+					<p class="control has-icons-left">
+						<input class="input is-small" type="text" placeholder="search"><span class="icon is-small is-left">
+							<i class="fas fa-search" aria-hidden="true"></i>
+						</span>
+					</p>
+				</div>
+
+				<p class="panel-tabs"><a class="is-active">all</a>
+					<a>public</a>
+					<a>private</a>
+					<a>sources</a>
+					<a>forks</a>
+				</p>
+				<a class="panel-block is-active">
+					<span class="panel-icon">
+						<i class="fas fa-book" aria-hidden="true"></i>
+					</span>
+					bulma
+				</a>
+				<a class="panel-block">
+					<span class="panel-icon">
+						<i class="fas fa-book" aria-hidden="true"></i>
+					</span>
+					marksheet
+				</a>
+				<a class="panel-block">
+					<span class="panel-icon">
+						<i class="fas fa-book" aria-hidden="true"></i>
+					</span>
+					minireset.css
+				</a>
+				<a class="panel-block">
+					<span class="panel-icon">
+						<i class="fas fa-book" aria-hidden="true"></i>
+					</span>
+					jgthms.github.io
+				</a>
+				<a class="panel-block">
+					<span class="panel-icon">
+						<i class="fas fa-code-branch" aria-hidden="true"></i>
+					</span>
+					daniellowtw/infboard
+				</a>
+				<a class="panel-block">
+					<span class="panel-icon">
+						<i class="fas fa-code-branch" aria-hidden="true"></i>
+					</span>
+					mojs
+				</a>
+
+				<label class="panel-block">
+					<input type="checkbox">remember me
+				</label>
+
+				<div class="panel-block">
+					<button class="button is-link is-outlined is-fullwidth">reset all filters</button>
+				</div>
+			</nav>
+		</section>
+
+		<section class="section" id="tags">
+			<h2 class="title">Tags</h2>
+
+			<hr><span class="tag">Tag label</span>
+			<span class="tag is-black">Black</span>
+			<span class="tag is-dark">Dark</span>
+			<span class="tag is-light">Light</span>
+			<span class="tag is-white">White</span>
+			<span class="tag is-primary">Primary</span>
+			<span class="tag is-link">Link</span>
+			<span class="tag is-info">Info</span>
+			<span class="tag is-success">Success</span>
+			<span class="tag is-warning">Warning</span>
+			<span class="tag is-danger">Danger</span>
+		</section>
+
+		<div class="content has-text-centered">
+			<hr>
+			<p class="is-centered">Theme by <a href="https://medialoot.com">Medialoot</a></p><br>
+		</div>
+	</div>
+	<!--.container-->
+</body>
+
+</html>
